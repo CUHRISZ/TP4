@@ -60,11 +60,14 @@ li {
 #directions {margin-bottom: 0;}
 
 .copyright {
-  font-family: Arial;
-  font-size: 9px;
-  font-style: italic;
-  padding-left: 50px;
-  padding-top: 50px;
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  font-size: 12px;
+  padding: 10px;
+}
+
+footer {
+  background-color: black;
 }
 
 /*    -------   RESPONSIVE DESIGN    ---------       */
@@ -73,12 +76,33 @@ li {
   
   
   #cakeingredients{ margin-left: 0; }
-  #cakeingredients, #frostingingredients, #directions {
+  #directions {
     display: block;
-    width: 80vw;
+    width: 90vw;
+    height: 80vh;
     border: 2px solid;
   }
+  #cakeingredients, #frostingingredients {
+    width: 90vw;
+    height: auto;
+  }
   #directions {margin-bottom: 20vh;}
+  
+  footer {
+    text-align: center;
+  }
 
+  
+}
+
+@media only screen and (max-width: 575px) {
+  
+  background-color: grey;
+    footer {
+    position: fixed;
+  }
+  
+  
+  
   
 }
